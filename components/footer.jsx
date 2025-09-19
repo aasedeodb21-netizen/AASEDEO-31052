@@ -8,7 +8,7 @@ export function Footer() {
                     href=""
                     className="decoration-dashed text-primary underline-offset-8"
                 >
-                    AASE-EMIS DASHBOARD
+                    AASEDEO 2025
                 </Link>
             </p>
         </footer>
