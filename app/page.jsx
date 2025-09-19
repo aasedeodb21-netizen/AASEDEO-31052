@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { Card } from 'components/card';
+
 import { ContextAlert } from 'components/context-alert';
 import { Markdown } from 'components/markdown';
-import { RandomQuote } from 'components/random-quote';
+
 import { getNetlifyContext } from 'utils';
 
 const contextExplainer = `
@@ -29,34 +29,8 @@ export default function Page() {
                     Staff Login
                 </Link>
             </section>
-            {!!ctx && (
-                <section className="flex flex-col gap-4">
-                    <Markdown content={contextExplainer} />
-                    <RuntimeContextCard />
+            
                 </section>
-            )}
-            <section className="flex flex-col gap-4">
-                <Markdown content={preDynamicContentExplainer} />
-                <RandomQuote />
-                <Markdown content={postDynamicContentExplainer} />
+           
             </section>
-        </div>
-    );
-}
-
-function RuntimeContextCard() {
-    const title = `Netlify Context: running in ${ctx} mode.`;
-    if (ctx === 'dev') {
-        return (
-            <Card title={title}>
-                <p>Next.js will rebuild any page you navigate to, including static pages.</p>
-            </Card>
-        );
-    } else {
-        return (
-            <Card title={title}>
-                <p></p>
-            </Card>
-        );
-    }
-}
+        
