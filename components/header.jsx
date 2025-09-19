@@ -4,7 +4,7 @@ import netlifyLogo from '';
 import githubLogo from '';
 
 const navItems = [
-    { linkText: 'AASE-EMIS', href: '/' },
+    { linkText: 'AASEDEO', href: '/' },
 ];
 
 export function Header() {
