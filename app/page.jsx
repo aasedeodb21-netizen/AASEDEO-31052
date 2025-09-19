@@ -28,9 +28,4 @@ export default function Page() {
                 <Link href="https://sites.google.com/view/aasedeo-user-login/staff-login" className="btn btn-lg sm:min-w-64">
                     Staff Login
                 </Link>
-            </section>
             
-                </section>
-           
-            </section>
-        
