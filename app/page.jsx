@@ -5,22 +5,7 @@ import { Markdown } from 'components/markdown';
 
 import { getNetlifyContext } from 'utils';
 
-const contextExplainer = `
 
-`;
-
-const preDynamicContentExplainer = `
-
-
-const postDynamicContentExplainer = `
-
-`;
-
-const ctx = getNetlifyContext();
-
-export default function Page() {
-    return (
-        <div className="flex flex-col gap-12 sm:gap-16">
             <section>
                 <ContextAlert className="mb-6" />
                 <h1 className="mb-4">AASE-EMIS DASHBOARD</h1>
