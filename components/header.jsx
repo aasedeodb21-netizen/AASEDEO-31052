@@ -11,7 +11,7 @@ export function Header() {
     return (
         <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
             <Link href="/">
-                <Image src={netlifyLogo} alt="Netlify logo" />
+                <Image src={netlifyLogo} alt="" />
             </Link>
             {!!navItems?.length && (
                 <ul className="flex flex-wrap gap-x-4 gap-y-1">
@@ -30,7 +30,7 @@ export function Header() {
                 rel="noopener noreferrer"
                 className="hidden lg:inline-flex lg:ml-auto"
             >
-                <Image src={githubLogo} alt="GitHub logo" className="w-7" />
+                <Image src={githubLogo} alt="" className="w-7" />
             </Link>
         </nav>
     );
